@@ -1,0 +1,36 @@
+{
+  "name": "cowinterpreter",
+  "version": "1.0.0",
+  "description": "cow language web interpreter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint && npx prettier --write ./src",
+    "build": "npx tsc",
+    "start": "node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chosakuken/cowInterpreter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/chosakuken/cowInterpreter/issues"
+  },
+  "homepage": "https://github.com/chosakuken/cowInterpreter#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "@types/express": "^5.0.3",
+    "@typescript-eslint/parser": "^8.43.0",
+    "eslint": "^9.35.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.43.0"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
