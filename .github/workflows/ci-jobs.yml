@@ -1,0 +1,20 @@
+# 参考サイト: (https://dev.classmethod.jp/articles/create-a-workflow-with-github-actions-that-executes-ci-only-at-the-time-of-push-and-ci-and-cd-when-merging/)
+# 参考サイト: (https://qiita.com/kibaa_go/items/7d2c5d10c7e88f9b7285)
+# ワークフロー名
+name: ci-jobs
+# ciタイミング
+on:
+  push:
+# ジョブグループ化
+jobs:
+  ci:
+    ## 走らせるサーバー指定
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: module_install
+        run: npm i
+      - name: lint
+        run: npm run lint
+      - name: build
+        run: npm run build
