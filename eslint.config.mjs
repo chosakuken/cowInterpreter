@@ -68,6 +68,6 @@ export default defineConfig([
     },
   },
   {
-    ignores: ["dist", "eslint.config.mjs"], // トランスパイル後のコードとこのファイルを対象外とする
+    ignores: ["dist", "eslint.config.mjs", "jest.config.js"], // トランスパイル後のコードとこのファイルを対象外とする
   },
 ]);
