@@ -15,7 +15,7 @@ function setupNunjucks(): void {
 setupNunjucks();
 
 app.get("/", (req: Request, res: Response): void => {
-  res.render("top.njk");
+  res.render("editor.njk");
 });
 
 app.listen(port, (): void => {

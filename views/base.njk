@@ -6,11 +6,12 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="container-fluid p-3">
+        <header class="container-fluid p-3 bg-info">
             <h1>自作COWコンパイラ</h1>
         </header>
         <div class="container p-3">
             {% block content %}{% endblock %}
         </div>
     </div>
+    {% block editor %}{% endblock %}
 </body>

@@ -1,0 +1,17 @@
+{% extends "base.njk" %}
+{% block title %}
+    トップ
+{% endblock %}
+{% block content %}
+    <h1>ハローワールド</h1>
+    <div id="editor" style="height: 400px"></div>
+{% endblock %}
+{% block editor %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.0/ace.js"></script>
+    <script>
+        const editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.setFontSize(20);
+        editor.getSession().setTabSize(2);
+    </script>
+{% endblock %}
