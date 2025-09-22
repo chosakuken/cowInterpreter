@@ -11,7 +11,6 @@ type operator =
   | "MMM"
   | "OOM"
   | "oom";
-
 function parser(input: string): operator[] {
   return input
     .trim()
